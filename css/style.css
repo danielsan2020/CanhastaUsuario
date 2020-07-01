@@ -6,11 +6,6 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #3498db1c;
-  background-image: url(/images/backgrounds/bg-1.jpg);
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 p {
@@ -315,7 +310,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 .card-body i {
@@ -2597,11 +2591,11 @@ margin-top: 10px;
   margin-bottom: 7px;
 }
 
-.canhasta-products {
+.canhasta-productos {
   margin: 0 0 0 25px;
 }
 
-.canhasta-productsfija {
+.canhasta-productosfija {
   margin: 0 0 0 0;
 }
 
@@ -2754,7 +2748,7 @@ button .caret {
 }
 }
 
-#number-of-products {
+#number-of-productos {
   display: inline;
 }
 

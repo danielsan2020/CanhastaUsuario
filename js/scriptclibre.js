@@ -4,37 +4,37 @@
   // e-commerce touchspin
   $('input[name=\'product-quantity\']').TouchSpin();
 
-  const numberOfProducts = document.getElementById('number-of-products');
-  const groupProducts = document.getElementsByClassName('bootstrap-touchspin');
+  const numberOfproductos = document.getElementById('number-of-productos');
+  const groupproductos = document.getElementsByClassName('bootstrap-touchspin');
   
   //Evento cada que se da click en botón o toca la pantalla móvil
   const countEvent = button => {
     button.addEventListener('touchstart', e => {
-        countProducts();
+        countproductos();
     });
     button.addEventListener('click', e => {
-        countProducts();
+        countproductos();
     });
   };
 
   //Un evento por cada botón de + y -
-  for(let i=0; i<groupProducts.length;i++) {
-    countEvent(groupProducts[i].children[0].children[0])
-    countEvent(groupProducts[i].children[4].children[0])
+  for(let i=0; i<groupproductos.length;i++) {
+    countEvent(groupproductos[i].children[0].children[0])
+    countEvent(groupproductos[i].children[4].children[0])
   };
 
-  let productsCounter = 0;
+  let productosCounter = 0;
 
   //Actualiza los productos
-  const countProducts = () => {
-    productsCounter = 0;
-    for(let i=0; i<groupProducts.length; i++){
-        const num = parseInt(groupProducts[i].children[2].value);
-        productsCounter += num;
+  const countproductos = () => {
+    productosCounter = 0;
+    for(let i=0; i<groupproductos.length; i++){
+        const num = parseInt(groupproductos[i].children[2].value);
+        productosCounter += num;
       };
-      numberOfProducts.innerHTML = productsCounter;
+      numberOfproductos.innerHTML = productosCounter;
   }
-  countProducts();
+  countproductos();
 
   //
   const cartButtons = document.getElementsByClassName('cart-button');
@@ -47,7 +47,7 @@
       const modalEl = document.getElementById(modalId);
       let inputValue = modalEl.getElementsByTagName('input')[0];
       inputValue.value++;
-      countProducts();
+      countproductos();
     });
   };
 

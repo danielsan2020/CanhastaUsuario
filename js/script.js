@@ -7,17 +7,17 @@
   const buttonNumCanhastasUp = document.getElementsByClassName('bootstrap-touchspin-up');
   const buttonNumCanhastasDown = document.getElementsByClassName('bootstrap-touchspin-down');
   const inputNumCanhastas = document.getElementById('product-quantity');
-  const numberOfProducts = document.getElementById('number-of-products');
-  numberOfProducts.innerHTML = inputNumCanhastas.value;
+  const numberOfproductos = document.getElementById('number-of-productos');
+  numberOfproductos.innerHTML = inputNumCanhastas.value;
 
   console.log(buttonNumCanhastasUp);
 
   const getNumberCanhastas = button => {
     button.addEventListener('touchstart', e => {
-      numberOfProducts.innerHTML = inputNumCanhastas.value;
+      numberOfproductos.innerHTML = inputNumCanhastas.value;
     });
     button.addEventListener('click', e => {
-      numberOfProducts.innerHTML = inputNumCanhastas.value;
+      numberOfproductos.innerHTML = inputNumCanhastas.value;
     });
   };
 
