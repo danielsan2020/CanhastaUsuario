@@ -1409,6 +1409,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   margin-right: 5px;
 }
 
+
+.protege {
+margin-top: 10px;
+}
+
 .single-product-details .color-swatches li {
   display: inline-block;
 }
@@ -2590,6 +2595,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .canhasta-products {
   margin: 0 0 0 25px;
+}
+
+.canhasta-productsfija {
+  margin: 0 0 0 0;
 }
 
 
