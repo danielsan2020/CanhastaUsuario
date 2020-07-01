@@ -129,7 +129,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   letter-spacing: 1px;
   padding: 15px 35px;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 200px;
   border-radius: 5;
 }
 
@@ -137,6 +137,64 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   background: #37454eb6;
   color: #fff;
 }
+
+.btn-mainregistroPago {
+  background: #3497DB;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 17px 35px;
+  float: right;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 200px;
+  border-radius: 5px;
+}
+
+.btn-mainregistroPago:hover {
+  background: #3498dba9;
+  color: white;
+}
+
+.btn-mainregistroAceptar {
+  background: #3497DB;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 17px 35px;
+  float: right;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 200px;
+  border-radius: 5px;
+}
+
+.btn-mainregistroAceptar:hover {
+  background: #3498dba9;
+  color: white;
+}
+
+.btn-mainregistroatrasRechazar {
+  background: #3b515f;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 17px 35px;
+  float: left;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 200px;
+  border-radius: 5px;
+}
+
+.btn-mainregistroatrasRechazar:hover {
+  background: #758794a9;
+  color: white;
+}
+
 
 
 .btn-main.btn-icon i, .btn-icon.btn-solid-border i, .btn-icon.btn-transparent i, .btn-icon.btn-small i {
