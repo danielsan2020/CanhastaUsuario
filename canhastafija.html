@@ -57,7 +57,8 @@
 					<ul class="top-menu text-right list-inline">
 						<li class="dropdown cart-nav dropdown-slide">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
-								<b>Tu Canasta</b>🍅</a><p id="number-of-productos"></p>
+								<b>Tu Canasta</b>🍅</a>
+							<p id="number-of-productos"></p>
 							<div class="dropdown-menu cart-dropdown">
 
 								<!-- Cart Item -->
@@ -83,16 +84,24 @@
 								</div>
 								<ul class="text-center cart-buttons">
 									<li><a href="cart.html" class="btn btn-info btn-sm">Ver Canasta</a></li>
-									<li><a href="precheckoutproductos.html" class="btn btn-success btn-sm">Comprar</a></li>
+									<li><a href="precheckoutproductos.html" class="btn btn-success btn-sm">Comprar</a>
+									</li>
 								</ul>
 							</div>
 						</li><!-- / Cart -->
-						
-						<!-- Ingresar -->
-						<li class="dropdown ">
-							<button class="btn btn-info" onclick="location.href='login.html';" type="button">Ingresar</button>
-						</li>
-						<!-- / Ingresar -->
+
+						</li><!-- INgreso -->
+						<li class="dropdown cart-nav dropdown-slide">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+								<a href="#"><img src="images/perfil.png" height="40px" width="40px" alt=""></a>
+								<p id="number-of-productos"></p>
+								<div class="dropdown-menu cart-dropdown text-center">
+									<ul class="cart-buttonsInicio text-center">
+										<a href="login.html" class="btn btn-info btn-sm">Iniciar sesión</a> <br>
+										<a href="registro1usuario.html" class="btn btn-success btn-sm">Regístrate</a>
+									</ul>
+								</div>
+						</li><!-- / Ingreso -->
 
 					</ul>
 				</div>
@@ -107,11 +116,13 @@
 					<form class="form-inline col-lg-3 canhasta-form">
 					</form>
 					<form class="form-inline col-lg-3 canhasta-form">
-						<input class="form-control canhasta-inputs" type="search" placeholder="Busca comercio o producto" aria-label="Search">
+						<input class="form-control canhasta-inputs" type="search"
+							placeholder="Busca comercio o producto" aria-label="Search">
 						<button class="btn btn-info" type="submit">🔎</button>
 					</form>
 					<form class="form-inline col-lg-3 canhasta-form">
-						<input style="color: #3497DB;" class="form-control canhasta-inputs" type="search" placeholder="Ingresa tu dirección" aria-label="Search">
+						<input style="color: #3497DB;" class="form-control canhasta-inputs" type="search"
+							placeholder="Ingresa tu dirección" aria-label="Search">
 						<button class="btn btn-info mb-5" type="submit">🏠</button>
 					</form>
 					<form class="form-inline col-lg-3 canhasta-form">
@@ -122,360 +133,374 @@
 		</nav>
 	</section>
 
-<section class="single-product">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
+	<section class="single-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				</div>
 			</div>
-		</div>
-		<div class="row mt-20">
-			<div class="col-md-5">
-				<div class="single-product-slider">
-					<div id='carousel-custom' class='carousel slide' data-ride='carousel'>
-						<div class='carousel-outer'>
-							<div class='carousel-inner '>
-								<div class='item active'>
-									<img src='images/fondoCanasta.jpg' alt='Comercio Local'>
-								</div>														
+			<div class="row mt-20">
+				<div class="col-md-5">
+					<div class="single-product-slider">
+						<div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+							<div class='carousel-outer'>
+								<div class='carousel-inner '>
+									<div class='item active'>
+										<img src='images/fondoCanasta.jpg' alt='Comercio Local'>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="col-md-7">
+					<div class="single-product-details">
+						<h2>Canhasta Fija Tipo A</h2>
+						<h3 class="product-price"><b>$300</b></h3>
+
+						<p class="product-description">
+							Esta Canhasta tiene <b>precio y productos fijos</b>, si necesitas otros productos además de
+							los que ves te recomendamos que elijas la <a href="#" target="_blank" class="card-link"
+								data-toggle="modal" data-target="#QueesModalArmada"><b>Canhasta Armada</b></a> o la <a
+								href="#" target="_blank" class="card-link" data-toggle="modal"
+								data-target="#QueesModalLibre"><b>Canhasta Libre</b>.</a><br>
+							Puedes elegir varias Canhastas si lo necesitas.
+						</p>
+						<p class="product-description">
+							<b>Breve descripción.</b>
+						</p>
+
+						<!-- Modal -->
+						<div class="modal fade" id="QueesModalArmada" tabindex="-1" role="dialog"
+							aria-labelledby="QueesModalArmada" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-center" id="QueesModalArmada"><b>🥥 CANHASTA
+												ARMADA</b></h5>
+									</div>
+									<div class="modal-body">
+										Elige los productos de una <b>lista preestablecida y sus cantidades</b> con un
+										precio
+										total máximo. <br>Si tienes dudas, revisa antes las otras 2
+										opciones de Canhastas.
+									</div>
+									<div class="modal-footer">
+										<a href="canhastaarmada.html" class="btn btn-mainregistro mt-20">Ir mejor a
+											Canhasta Armada</a>
+										<button type="button" data-dismiss="modal"
+											class="btn btn-warning mt-20">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="QueesModalLibre" tabindex="-1" role="dialog"
+							aria-labelledby="QueesModalLibre" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-center" id="QueesModalLibre"><b>🍉 CANHASTA
+												LIBRE</b></h5>
+									</div>
+									<div class="modal-body">
+										Elige todos los productos y cantidades que quieras añadir a tu Canhasta, <b>sin
+											productos preestablecidos o un precio final fijo. Tu decides.</b>
+									</div>
+									<div class="modal-footer">
+										<a href="canhastalibre.html" class="btn btn-mainregistro mt-20">Ir mejor a
+											Canhasta Libre</a>
+										<button type="button" data-dismiss="modal"
+											class="btn btn-warning mt-20">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-size">
+							<span>Incluye:</span>
+							<select button class="form-control btn btn-warning canhasta-productosfija">
+								<option>1 kg papas</option>
+								<option>1/2 kg jitomates</option>
+								<option>1/5 kg lechuga</option>
+								<option>1 pieza perejil</option>
+							</select>
+						</div>
+
+						<div class="product-quantity">
+							<span>Número de canhastas:</span>
+
+							<div class="product-quantity-slider">
+								<input button class="btn btn-warning" id="product-quantity" type="text" value="0"
+									name="product-quantity">
+							</div>
+						</div>
+						<a href="cart.html" class="btn btn-mainregistro mt-20">Agregar a Canhasta</a><br>
+						<img class="protege" src="images/programayprotege.png" height="40%" width="40%" alt="Delivery">
+					</div>
+				</div>
 			</div>
-			<div class="col-md-7">
-				<div class="single-product-details">
-					<h2>Canhasta Fija Tipo A</h2>
-					<h3 class="product-price"><b>$300</b></h3>
+		</div>
+	</section>
 
-					<p class="product-description">
-						Esta Canhasta tiene <b>precio y productos fijos</b>, si necesitas otros productos además de los que ves te recomendamos que elijas la <a href="#" target="_blank" class="card-link" data-toggle="modal" data-target="#QueesModalArmada"><b>Canhasta Armada</b></a> o la <a href="#" target="_blank" class="card-link" data-toggle="modal" data-target="#QueesModalLibre"><b>Canhasta Libre</b>.</a><br>
-						Puedes elegir varias Canhastas si lo necesitas.
-					</p>
-					<p class="product-description">
-						<b>Breve descripción.</b>
-					</p>
+	<section class="productos related-productos section">
+		<div class="container">
+			<div class="row">
+				<div class="title text-center">
+					<h2>Productos destacados</h2>
+				</div>
+			</div>
 
-					<!-- Modal -->
-					<div class="modal fade" id="QueesModalArmada" tabindex="-1" role="dialog"
-						aria-labelledby="QueesModalArmada" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title text-center" id="QueesModalArmada"><b>🥥 CANHASTA ARMADA</b></h5>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-item">
+						<div class="product-thumb">
+							<span class="bage" title="Promoción">🏷️</span>
+							<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
+							<div class="preview-meta">
+								<ul>
+									<li>
+										<span style="color:#3497DB" ; data-toggle="modal" data-target="#product-modal">
+											<i class="tf-ion-ios-search"></i>
+										</span>
+									</li>
+									<li>
+										<a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB" ;></i></a>
+									</li>
+									<li>
+										<a href=""><i class="tf-ion-android-cart" style="color:#3497DB" ;></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product-content">
+							<h4><a href="product-single.html">Pimiento amarillo</a></h4>
+							<p class="price">$200</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="product-item">
+						<div class="product-thumb">
+							<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
+							<div class="preview-meta">
+								<ul>
+									<li>
+										<span style="color:#3497DB" ; data-toggle="modal" data-target="#product-modal">
+											<i class="tf-ion-ios-search"></i>
+										</span>
+									</li>
+									<li>
+										<a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB" ;></i></a>
+									</li>
+									<li>
+										<a href=""><i class="tf-ion-android-cart" style="color:#3497DB" ;></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product-content">
+							<h4><a href="product-single.html">Pimiento amarillo</a></h4>
+							<p class="price">$200</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-item">
+						<div class="product-thumb">
+							<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
+							<div class="preview-meta">
+								<ul>
+									<li>
+										<span style="color:#3497DB" ; data-toggle="modal" data-target="#product-modal">
+											<i class="tf-ion-ios-search"></i>
+										</span>
+									</li>
+									<li>
+										<a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB" ;></i></a>
+									</li>
+									<li>
+										<a href=""><i class="tf-ion-android-cart" style="color:#3497DB" ;></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product-content">
+							<h4><a href="product-single.html">Pimiento amarillo</a></h4>
+							<p class="price">$230</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-item">
+						<div class="product-thumb">
+							<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
+							<div class="preview-meta">
+								<ul>
+									<li>
+										<span style="color:#3497DB" ; data-toggle="modal" data-target="#product-modal">
+											<i class="tf-ion-ios-search"></i>
+										</span>
+									</li>
+									<li>
+										<a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB" ;></i></a>
+									</li>
+									<li>
+										<a href=""><i class="tf-ion-android-cart" style="color:#3497DB" ;></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product-content">
+							<h4><a href="product-single.html">Pimiento amarillo</a></h4>
+							<p class="price">$200</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal -->
+	<div class="modal product-modal fade" id="product-modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<i class="tf-ion-close"></i>
+		</button>
+
+		<div class="modal-dialog " role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="modal-image">
+								<img class="img-responsive" src="images/shop/productos/frutamodal.png">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="product-short-details">
+								<h2 class="product-title">Nombre producto</h2>
+								<p class="product-price">$200</p>
+								<p class="product-short-description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elituam rem aut officia dicta
+									cumque.
+								</p>
+								<div class="product-size">
+									<select button class="form-control btn btn-warning">
+										<option>1/2 kg</option>
+										<option>1/5 kg</option>
+										<option>1 pieza</option>
+									</select>
 								</div>
-								<div class="modal-body">
-								Elige los productos de una <b>lista preestablecida y sus cantidades</b> con un precio
-								total máximo. <br>Si tienes dudas, revisa antes las otras 2
-								opciones de Canhastas.
+								<div class="product-quantity">
+									<div class="product-quantity-slider">
+										<input button class="btn btn-warning" id="product-quantity" type="text"
+											value="0" name="product-quantity">
+									</div>
 								</div>
-								<div class="modal-footer">
-									<a href="canhastaarmada.html" class="btn btn-mainregistro mt-20">Ir mejor a Canhasta Armada</a>
-									<button type="button" data-dismiss="modal" class="btn btn-warning mt-20">Cerrar</button>
-								</div>
+								<a href="" class="btn btn-mainregistro">Agregar a Canhasta</a>
 							</div>
 						</div>
 					</div>
-
-					<!-- Modal -->
-					<div class="modal fade" id="QueesModalLibre" tabindex="-1" role="dialog"
-						aria-labelledby="QueesModalLibre" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title text-center" id="QueesModalLibre"><b>🍉 CANHASTA LIBRE</b></h5>
-								</div>
-								<div class="modal-body">
-								Elige todos los productos y cantidades que quieras añadir a tu Canhasta, <b>sin
-								productos preestablecidos o un precio final fijo. Tu decides.</b>
-								</div>
-								<div class="modal-footer">
-									<a href="canhastalibre.html" class="btn btn-mainregistro mt-20">Ir mejor a Canhasta Libre</a>
-									<button type="button" data-dismiss="modal" class="btn btn-warning mt-20">Cerrar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="product-size">
-						<span>Incluye:</span>
-						<select button class="form-control btn btn-warning canhasta-productosfija">
-							<option>1 kg papas</option>
-							<option>1/2 kg jitomates</option>
-							<option>1/5 kg lechuga</option>
-							<option>1 pieza perejil</option>
-						</select>
-					</div>
-
-					<div class="product-quantity">
-						<span>Número de canhastas:</span>
-
-						<div class="product-quantity-slider">
-							<input button class="btn btn-warning" id="product-quantity" type="text" value="0" name="product-quantity">
-						</div>
-					</div>
-					<a href="cart.html" class="btn btn-mainregistro mt-20">Agregar a Canhasta</a><br>
-					<img class="protege" src="images/programayprotege.png" height="40%" width="40%" alt="Delivery">
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
 
-<section class="productos related-productos section">
-	<div class="container">
-		<div class="row">
-			<div class="title text-center">
-				<h2>Productos destacados</h2>
+	<footer class="footer section text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-media">
+						<li>
+							<a href="https://www.facebook.com/canhastalocal/" target="_blank">
+								<i class="tf-ion-social-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="tf-ion-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="tf-ion-social-twitter"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-menu">
+						<li>
+							<a href="index.html">Conoce CANHASTA</a>
+						</li>
+
+						<li>
+							<a href="mailto: tucanhasta@canhasta.com">Contacta con CANHASTA</a>
+						</li>
+
+						<li>
+							<a href="registro1comercio.html">Únete como Comercio Local</a>
+						</li>
+
+						<li>
+							<a href="BLOG/blogprincipal.html">Blog</a>
+						</li>
+
+						<li>
+							<a href="faq.html">FAQ´s</a>
+						</li>
+						<li>
+							<a href="doc/Término y Condiciones.docx">Términos y Condiciones</a>
+						</li>
+						<li>
+							<a href="doc/Aviso de Privacidad.docx">Políticas de privacidad</a>
+						</li>
+					</ul>
+					<h6>Copyright 2020. Todos los derechos reservados. Diseñado y desarrollado por <a
+							href="https://danielsan2020.github.io/FLIPA/" target="_blank">FLIPA </a></h6>
+				</div>
 			</div>
 		</div>
-		
-		<div class="row">
-			<div class="col-md-3">
-				<div class="product-item">
-					<div class="product-thumb">
-						<span class="bage">Promoción</span>
-						<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
-						<div class="preview-meta">
-							<ul>
-								<li>
-									<span style="color:#3497DB"; data-toggle="modal" data-target="#product-modal">
-										<i class="tf-ion-ios-search"></i>
-									</span>
-								</li>
-								<li>
-			                        <a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB";></i></a>
-								</li>
-								<li>
-									<a href=""><i class="tf-ion-android-cart" style="color:#3497DB";></i></a>
-								</li>
-							</ul>
-                      	</div>
-					</div>
-					<div class="product-content">
-						<h4><a href="product-single.html">Pimiento amarillo</a></h4>
-						<p class="price">$200</p>
-					</div>
-				</div>
-			</div>
+	</footer>
 
-			<div class="col-md-3">
-				<div class="product-item">
-					<div class="product-thumb">
-						<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
-						<div class="preview-meta">
-							<ul>
-								<li>
-									<span style="color:#3497DB"; data-toggle="modal" data-target="#product-modal">
-										<i class="tf-ion-ios-search"></i>
-									</span>
-								</li>
-								<li>
-			                        <a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB";></i></a>
-								</li>
-								<li>
-									<a href=""><i class="tf-ion-android-cart" style="color:#3497DB";></i></a>
-								</li>
-							</ul>
-                      	</div>
-					</div>
-					<div class="product-content">
-						<h4><a href="product-single.html">Pimiento amarillo</a></h4>
-						<p class="price">$200</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="product-item">
-					<div class="product-thumb">
-						<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
-						<div class="preview-meta">
-							<ul>
-								<li>
-									<span style="color:#3497DB"; data-toggle="modal" data-target="#product-modal">
-										<i class="tf-ion-ios-search"></i>
-									</span>
-								</li>
-								<li>
-			                        <a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB";></i></a>
-								</li>
-								<li>
-									<a href=""><i class="tf-ion-android-cart" style="color:#3497DB";></i></a>
-								</li>
-							</ul>
-                      	</div>
-					</div>
-					<div class="product-content">
-						<h4><a href="product-single.html">Pimiento amarillo</a></h4>
-						<p class="price">$230</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="product-item">
-					<div class="product-thumb">
-						<img class="img-responsive" src="images/shop/productos/product-1.jpg" alt="product-img">
-						<div class="preview-meta">
-							<ul>
-								<li>
-									<span style="color:#3497DB"; data-toggle="modal" data-target="#product-modal">
-										<i class="tf-ion-ios-search"></i>
-									</span>
-								</li>
-								<li>
-			                        <a href="#"><i class="tf-ion-ios-heart" style="color:#3497DB";></i></a>
-								</li>
-								<li>
-									<a href=""><i class="tf-ion-android-cart" style="color:#3497DB";></i></a>
-								</li>
-							</ul>
-                      	</div>
-					</div>
-					<div class="product-content">
-						<h4><a href="product-single.html">Pimiento amarillo</a></h4>
-						<p class="price">$200</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
+	<script src="plugins/jquery/dist/jquery.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+	<script src="plugins/instafeed-js/instafeed.min.js"></script>
+	<script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+	<script src="plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-<!-- Modal -->
-<div class="modal product-modal fade" id="product-modal">
-	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		<i class="tf-ion-close"></i>
-	</button>
-	
-  	<div class="modal-dialog " role="document">
-    	<div class="modal-content">
-	      	<div class="modal-body">
-	        	<div class="row">
-	        		<div class="col-md-8">
-	        			<div class="modal-image">
-		        			<img class="img-responsive" src="images/shop/productos/frutamodal.png">
-	        			</div>
-	        		</div>
-	        		<div class="col-md-3">
-	        			<div class="product-short-details">
-	        				<h2 class="product-title">Nombre producto</h2>
-	        				<p class="product-price">$200</p>
-	        				<p class="product-short-description">
-	        					Lorem ipsum dolor sit amet, consectetur adipisicing elituam rem aut officia dicta cumque.
-							</p>
-							<div class="product-size">
-								<select button class="form-control btn btn-warning">
-									<option>1/2 kg</option>
-									<option>1/5 kg</option>
-									<option>1 pieza</option>
-								</select>
-							</div>
-							<div class="product-quantity">
-								<div class="product-quantity-slider">
-									<input button class="btn btn-warning" id="product-quantity" type="text" value="0" name="product-quantity">
-								</div>
-							</div>
-	        				<a href="" class="btn btn-mainregistro">Agregar a Canhasta</a>
-	        			</div>
-	        		</div>
-	        	</div>
-	        </div>
-    	</div>
-  	</div>
-</div>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript"
+		src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="plugins/revolution-slider/assets/warning.js"></script>
 
-<footer class="footer section text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="social-media">
-					<li>
-						<a href="https://www.facebook.com/canhastalocal/" target="_blank">
-							<i class="tf-ion-social-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">
-							<i class="tf-ion-social-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">
-							<i class="tf-ion-social-twitter"></i>
-						</a>
-					</li>
-				</ul>
-				<ul class="footer-menu">
-					<li>
-						<a href="index.html">Conoce CANHASTA</a>
-					</li>
-
-					<li>
-						<a href="mailto: tucanhasta@canhasta.com">Contacta con CANHASTA</a>
-					</li>
-
-					<li>
-						<a href="registro1comercio.html">Únete como Comercio Local</a>
-					</li>
-
-					<li>
-						<a href="BLOG/blogprincipal.html">Blog</a>
-					</li>
-
-					<li>
-						<a href="faq.html">FAQ´s</a>
-					</li>
-					<li>
-						<a href="doc/Término y Condiciones.docx">Términos y Condiciones</a>
-					</li>
-					<li>
-						<a href="doc/Aviso de Privacidad.docx">Políticas de privacidad</a>
-					</li>
-				</ul>
-				<h6>Copyright 2020. Todos los derechos reservados. Diseñado y desarrollado por <a
-						href="https://danielsan2020.github.io/FLIPA/" target="_blank">FLIPA </a></h6>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<script src="plugins/jquery/dist/jquery.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-<script src="plugins/instafeed-js/instafeed.min.js"></script>
-<script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
-<script src="plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script type="text/javascript"
-	src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script type="text/javascript" src="plugins/revolution-slider/assets/warning.js"></script>
-
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
 <script type="text/javascript" src="plugins/google-map/gmap.js"></script> -->
 
-<script src="js/script.js"></script>
+	<script src="js/script.js"></script>
 
 
 
