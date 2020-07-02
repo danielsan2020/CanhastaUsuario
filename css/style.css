@@ -308,8 +308,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 20px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -2154,7 +2159,11 @@ margin-top: 10px;
 }
 
 .bg-1 {
-  background-image: url(../images/backgrounds/bg-1.jpg);
+  background-image: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 .account .block {
