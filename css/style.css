@@ -2789,5 +2789,13 @@ button .caret {
 .field-icon {
   float: right;
   margin-top: -30px;
+  margin-right: 10px;
   z-index: 2;
+}
+
+i {
+  float: right;
+  margin-top: -30px;
+  margin-right: 10px;
+  color: #17a2b8;
 }
