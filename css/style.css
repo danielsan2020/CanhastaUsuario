@@ -50,8 +50,8 @@ blockquote {
   background: #000;
 }
 
-input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
-  border-radius: 0;
+input[type="email"], textarea, input[type="password"], input[type="text"], input[type="tel"] {
+  border-radius: 3;
   box-shadow: none;
   height: 45px;
   outline: none;
@@ -59,19 +59,23 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   font-size: 12px;
 }
 
-input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
+input[type="email"]:focus, textarea, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
   box-shadow: none;
   border: 1px solid #000;
 }
 
 .form-control {
   box-shadow: none;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .form-control:focus {
   box-shadow: none;
   border: 2px solid #3497DB;
+}
+
+.inputComercio {
+  border-radius: 5px;
 }
 
 .btn-main, .btn-solid-border, .btn-transparent, .btn-small {
@@ -1459,12 +1463,15 @@ margin-top: 10px;
   display: inline-block;
 }
 
+.textoinferior {
+  line-height: normal;
+}
+
 .single-product-details .product-size .form-control {
   display: inline-block;
   width: 130px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  /* color: #000; */
   font-size: 12px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -2736,7 +2743,6 @@ div .multiselect {
 button .caret {
   float: right;
 }
-
 
 @media (max-width: 400px) {
   div .multiselect {
