@@ -1090,17 +1090,10 @@ input[type="email"]:focus, textarea, input[type="password"]:focus, input[type="t
   border-radius: 3px;
 }
 
-/* .product-item .product-thumb:before {
-  transition: .3s all;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-} */
+.fotosreborde img {
+  border-radius: 10px;
+}
+
 
 .product-item .product-thumb .preview-meta {
   position: absolute;
@@ -1109,10 +1102,6 @@ input[type="email"]:focus, textarea, input[type="password"]:focus, input[type="t
   left: 0;
   width: 100%;
   justify-content: center;
-  /* opacity: 0;
-  transition: 0.2s;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px); */
 }
 
 .product-item .product-thumb .preview-meta li {

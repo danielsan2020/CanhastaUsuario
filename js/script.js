@@ -134,7 +134,7 @@ $('#simple-timer').syotimer({
         modal.find('.modal-title').text('New message to ' + recipient)
         modal.find('.modal-body input').val(recipient)
       })
-
+      
       // CALCULADORA ENVIO
       // <!-- Ejemplo: 8 km | 8km-3km= 5km * $8=$40 + $27.43 = * 0.16 -->
       let enviocalculo = "";
