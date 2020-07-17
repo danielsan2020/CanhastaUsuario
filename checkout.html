@@ -31,7 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/css/layers.css">
 	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/css/navigation.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -90,13 +90,20 @@
 							</div>
 						</li><!-- / Cart -->
 
-						<!-- Ingresar -->
-						<li class="dropdown ">
-							<button class="btn btn-info" onclick="location.href='login.html';"
-							type="button">Ingresar</button>
 						</li>
-						<!-- / Ingresar -->
+						<!-- INgreso -->
 
+						<li class="dropdown cart-nav dropdown-slide">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+								<a href="#"><img src="images/perfil.png" height="40px" width="40px" alt=""></a>
+								<p id="number-of-productos"></p>
+								<div class="dropdown-menu cart-dropdown text-center">
+									<ul class="cart-buttonsInicio text-center">
+										<a href="login.html" class="btn btn-info btn-sm">Iniciar sesión</a> <br>
+										<a href="registro1usuario.html" class="btn btn-success btn-sm">Regístrate</a>
+									</ul>
+								</div>
+						</li><!-- / Ingreso -->
 					</ul>
 				</div>
 			</div>
@@ -111,8 +118,8 @@
 						<div class="block billing-details">
 							<h4 class="widget-title"><b>REGISTRA TUS DATOS PARA COMPRAR</b></h4>
 							<p>Estos datos son solo necesarios para realizar el envío. <br>Te recomendamos que te
-								registres para que
-								no tengas que repetir tus datos cada vez que pidas en Canhasta.
+								<a href="registro1usuario.html">registres</a> para que no tengas que repetir tus
+								datos cada vez que pidas en tus Comercios Locales con Canhasta.
 							</p>
 							<form class="checkout-form">
 								<div class="form-group">
@@ -172,12 +179,12 @@
 										<div class="modal-body">
 											<div class="modal-body">
 												<b>Banco: Santander<br>
-												Nombre: {Comercio local}<br>
-												CLABE: 9393933939393939393939 <br>
-												Asunto: Tu nombre completo </b><br>
+													Nombre: {Comercio local}<br>
+													CLABE: 9393933939393939393939 <br>
+													Asunto: Tu nombre completo </b><br>
 												Una vez hecho el depósito envíalo a
 												<b>tucanhasta@canhasta</b>. <br>
-												Si requieres factura, solicítala en el mismo correo.
+												Si requieres factura, solicítala en el checkout.
 											</div>
 										</div>
 										<div class="modal-footer">
@@ -224,13 +231,13 @@
 									<div class="card-details">
 										<form class="checkout-form">
 											<div class="form-group">
-												<label for="card-number"><b>Titular</b><span class="required"></span></label>
+												<label for="card-number"><b>Titular</b><span
+														class="required"></span></label>
 												<input id="titularnombre" class="form-control" type="text"
 													placeholder="Nombre del titular">
 											</div>
 											<div class="form-group">
-												<label for="card-number">💳<span
-														class="required"></span></label>
+												<label for="card-number">💳<span class="required"></span></label>
 												<input id="card-number" class="form-control" type="text"
 													placeholder="•••• •••• •••• ••••">
 											</div>
@@ -243,7 +250,7 @@
 											<div class="form-group">
 												<label for="card-cvc"><b>CVC</b><span class="required"></span></label>
 												<input id="password" class="form-control" type="password" maxlength="3"
-												name="password" value="" placeholder="3 dígitos">
+													name="password" value="" placeholder="3 dígitos">
 												<i class="fa fa-eye-slash" id="togglePassword"></i>
 											</div>
 											<a href="#" class="btn btn-mainregistro mt-20">Guardar</a>
@@ -264,8 +271,9 @@
 									</a>
 									<div class="media-body">
 										<h4 class="media-heading"><a href="product-single.html">Canhasta Fija</a></h4>
-										<p class="price">0 x $0</p>
-										<span class="remove">🗑️</span>
+										<p class="price">0 x $500
+											<span class="remove">🗑️</span>
+										</p>
 									</div>
 								</div>
 
@@ -299,12 +307,53 @@
 										<p>¿Tienes algún código de promoción?<a data-toggle="modal"
 												data-target="#coupon-modal" href=""><br>Clic aquí</a></p>
 									</div>
-									<div class="form-checkBanco text-left">
-										<input type="checkbox" class="form-check-input" id="exampleCheck1"> 
-										<label class="form-check-label" for="exampleCheck1">¿Necesitas factura?</label>
+									<button type="button" class="btn btn-primary" data-toggle="modal"
+										data-target="#Modalfactura" data-whatever="@getbootstrap">¿Necesitas factura?</button>
+
+									<div class="modal fade" id="Modalfactura" tabindex="-1" role="dialog"
+										aria-labelledby="ModalfacturaLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="ModalfacturaLabel">COMPLETA TUS DATOS FISCALES</h5>
+												</div>
+												<div class="modal-body">
+													<form>
+														<div class="form-group">
+															<label for="recipient-name"
+																class="col-form-label">Razón Social /Nombre:</label>
+															<input type="text" class="form-control" id="recipient-name">
+														</div>
+														<div class="form-group">
+															<label for="recipient-name"
+																class="col-form-label">RFC:</label>
+															<input type="text" class="form-control" id="recipient-name">
+														</div>
+														<div class="form-group">
+															<label for="recipient-name"
+																class="col-form-label">Código Postal:</label>
+															<input type="text" class="form-control" id="recipient-name">
+														</div>
+														<div class="form-group">
+															<label for="recipient-name"
+																class="col-form-label">Correo electrónico al que le llegará tu factura:</label>
+															<input type="text" class="form-control" id="recipient-name">
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary"
+														data-dismiss="modal">Cerrar</button>
+													<button type="button" class="btn btn-primary">Enviar datos</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="confirmation.html" class="btn btn-success mt-20">🍋 Gracias por tu
+										Compra</a>
 								</div>
-									<a href="confirmation.html" class="btn btn-success mt-20">🍋 Gracias por tu Compra</a>
-								</div>
+								<img class="protege" src="images/programayprotege.png" height="70%" width="70%"
+									alt="Delivery">
 							</div>
 						</div>
 					</div>
@@ -377,8 +426,8 @@
 							<a href="doc/Aviso de Privacidad.docx">Políticas de privacidad</a>
 						</li>
 					</ul>
-					<h6>Copyright 2020. Todos los derechos reservados. Diseñado y desarrollado por <a
-							href="#" target="_blank">CANHASTA </a></h6>
+					<h6>Copyright 2020. Todos los derechos reservados. Diseñado y desarrollado por <a href="#"
+							target="_blank">CANHASTA </a></h6>
 				</div>
 			</div>
 		</div>
@@ -417,7 +466,7 @@
 	<script src="js/script.js"></script>
 	<script src="js/csvshow.js"></script>
 
-	
+
 
 </body>
 

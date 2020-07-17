@@ -56,42 +56,51 @@
 					<ul class="top-menu text-right list-inline">
 						<li class="dropdown cart-nav dropdown-slide">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
-								<b>Tu Canhasta</b>🍅</a>
+								<b>Tu Canasta</b>🍅</a>
 							<div class="dropdown-menu cart-dropdown">
 
 								<!-- Cart Item -->
 								<div class="media">
-									<a class="pull-left" href="#">
+									<!-- <a class="pull-left">
 										<img class="media-object" src="images/shop/cart/Canasta fija.png" alt="canasta">
-									</a>
+									</a> -->
 									<div class="media-body">
-										<h4 class="media-heading"><a href="">Canasta fija</a></h4>
+										<!-- <h4 class="media-heading">
+										<a>Canasta fija</a>
+										</h4>
 										<div class="cart-price">
 											<span>1 x</span>
 											<span>1200</span>
 										</div>
-										<h5><strong>$1200</strong></h5>
+										<h5><strong>$1200</strong></h5> -->
 									</div>
-									<a href="#" class="remove"><i class="tf-ion-close"></i></a>
-								</div><!-- / Cart Item -->
+								</div>
 
 								<div class="cart-summary">
 									<span>Total</span>
-									<span class="total-price">$1200</span>
+									<span class="total-price">$0</span>
 								</div>
-								<ul class="text-center cart-buttons">
-									<li><a href="" class="btn btn-info btn-sm">Ver Canasta</a></li>
-									<li><a href="" class="btn btn-success btn-sm">Comprar</a></li>
+								<ul class="cart-buttons">
+									<a href="empty-cart.html" class="btn btn-info btn-sm">Ver Canasta</a>
+									<a href="empty-cart.html" class="btn btn-success btn-sm">Comprar</a>
 								</ul>
 							</div>
 						</li><!-- / Cart -->
 
-						<!-- Ingresar -->
-						<li class="dropdown ">
-							<button class="btn btn-info" href="index.html">Ingresar</button>
 						</li>
-						<!-- / Ingresar -->
+						<!-- INgreso -->
 
+						<li class="dropdown cart-nav dropdown-slide">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+								<a href="#"><img src="images/perfil.png" height="40px" width="40px" alt=""></a>
+								<p id="number-of-productos"></p>
+								<div class="dropdown-menu cart-dropdown text-center">
+									<ul class="cart-buttonsInicio text-center">
+										<a href="login.html" class="btn btn-info btn-sm">Iniciar sesión</a> <br>
+										<a href="registro1usuario.html" class="btn btn-success btn-sm">Regístrate</a>
+									</ul>
+								</div>
+						</li><!-- / Ingreso -->
 					</ul>
 				</div>
 			</div>
@@ -158,7 +167,8 @@
 								<h5 class="modal-title" id="QueesModalLlevar"><b>🚴‍♂️ LLEVAR CANHASTA</b></h5>
 							</div>
 							<div class="modal-body">
-								Reparto exclusivo a través de tu Comercio local. <br>Costo por envío: <b>$0 pesos</b>.
+								Reparto a través de tu Comercio local. <br>Costo por envío: <br><b>Tarifa mínima $27.43
+									MXN y $8 MXN por km adicional</b>.
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -170,7 +180,7 @@
 
 				<!-- RECOGER -->
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-3 comercio-col">
-					<a href="checkoutrecoge.html">
+					<a href="recogeodeliveryquien.html">
 						<img class="w-100" border="0" src="images/llevarcanasta.svg" alt="ComercioLocal">
 					</a>
 					<!-- Button trigger modal -->

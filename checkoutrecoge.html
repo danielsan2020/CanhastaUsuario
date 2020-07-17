@@ -63,35 +63,46 @@
 
 								<!-- Cart Item -->
 								<div class="media">
-									<a class="pull-left" href="#">
-										<img class="media-object" src="images/shop/cart/Canasta fija.png" alt="Canasta">
-									</a>
+									<!-- <a class="pull-left">
+										<img class="media-object" src="images/shop/cart/Canasta fija.png" alt="canasta">
+									</a> -->
 									<div class="media-body">
-										<h4 class="media-heading"><a href="">Canasta fija</a></h4>
+										<!-- <h4 class="media-heading">
+										<a>Canasta fija</a>
+										</h4>
 										<div class="cart-price">
 											<span>1 x</span>
 											<span>1200</span>
 										</div>
-										<h5><strong>$1200</strong></h5>
+										<h5><strong>$1200</strong></h5> -->
 									</div>
-									<a href="#" class="remove"><i class="tf-ion-close"></i></a>
-								</div><!-- / Cart Item -->
+								</div>
 
 								<div class="cart-summary">
 									<span>Total</span>
 									<span class="total-price">$0</span>
 								</div>
-								<ul class="text-center cart-buttons">
-									<li><a href="" class="btn btn-info btn-sm">Ver Canasta</a></li>
-									<li><a href="" class="btn btn-success btn-sm">Comprar</a></li>
+								<ul class="cart-buttons">
+									<a href="empty-cart.html" class="btn btn-info btn-sm">Ver Canasta</a>
+									<a href="empty-cart.html" class="btn btn-success btn-sm">Comprar</a>
 								</ul>
 							</div>
 						</li><!-- / Cart -->
 
-						<!-- Ingresar -->
-						<button class="btn btn-info" onclick="location.href='login.html';"
-							type="button">Ingresar</button>
-						<!-- / Ingresar -->
+						
+					</li><!-- INgreso -->
+
+					<li class="dropdown cart-nav dropdown-slide">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+							<a href="#"><img src="images/perfil.png" height="40px" width="40px" alt=""></a>
+							<p id="number-of-productos"></p>
+							<div class="dropdown-menu cart-dropdown text-center">
+								<ul class="cart-buttonsInicio text-center">
+									<a href="login.html" class="btn btn-info btn-sm">Iniciar sesión</a> <br>
+									<a href="registro1usuario.html" class="btn btn-success btn-sm">Regístrate</a>
+								</ul>
+							</div>
+					</li><!-- / Ingreso -->
 
 					</ul>
 				</div>
@@ -106,8 +117,8 @@
             <div class="col-md-8">
                <div class="block billing-details">
 				  <h4 class="widget-title"><b>REGISTRA TUS DATOS PARA COMPRAR</b></h4>
-				  <p>Estos datos son solo necesarios para tener tu contacto en caso de necesitarlo.<br>Te recomendamos que te registres para que
-					no tengas que repetir tus datos cada vez que pidas en Canhasta.
+				  <p>Estos datos son solo necesarios para tener tu contacto en caso de necesitarlo.<br>Te recomendamos que te <a href="registro1usuario.html">registres</a> para que no tengas que repetir tus
+					datos cada vez que pidas en tus Comercios Locales con Canhasta.
 				  </p>
                   <form class="checkout-form">
                      <div class="form-group">
@@ -237,8 +248,9 @@
 						</a>
 						<div class="media-body">
 							<h4 class="media-heading"><a href="product-single.html">Canhasta Fija</a></h4>
-							<p class="price">0 x $0</p>
+							<p class="price">0 x $500
 							<span class="remove">🗑️</span>
+							</p>
 						</div>
 					</div>
 
@@ -272,12 +284,53 @@
 					<div class="discount-code">
 						<p>¿Tienes algún código de promoción?<a data-toggle="modal" data-target="#coupon-modal" href=""><br>Clic aquí</a></p>
 						</div>
-						<div class="form-checkBanco text-left">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1"> 
-							<label class="form-check-label" for="exampleCheck1">¿Necesitas factura?</label>
+						<button type="button" class="btn btn-primary" data-toggle="modal"
+						data-target="#Modalfactura" data-whatever="@getbootstrap">¿Necesitas factura?</button>
+
+					<div class="modal fade" id="Modalfactura" tabindex="-1" role="dialog"
+						aria-labelledby="ModalfacturaLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="ModalfacturaLabel">COMPLETA TUS DATOS FISCALES</h5>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="recipient-name"
+												class="col-form-label">Razón Social /Nombre:</label>
+											<input type="text" class="form-control" id="recipient-name">
+										</div>
+										<div class="form-group">
+											<label for="recipient-name"
+												class="col-form-label">RFC:</label>
+											<input type="text" class="form-control" id="recipient-name">
+										</div>
+										<div class="form-group">
+											<label for="recipient-name"
+												class="col-form-label">Código Postal:</label>
+											<input type="text" class="form-control" id="recipient-name">
+										</div>
+										<div class="form-group">
+											<label for="recipient-name"
+												class="col-form-label">Correo electrónico al que le llegará tu factura:</label>
+											<input type="text" class="form-control" id="recipient-name">
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-dismiss="modal">Cerrar</button>
+									<button type="button" class="btn btn-primary">Enviar datos</button>
+								</div>
+							</div>
+						</div>
 					</div>
+						
 						<a href="confirmation.html" class="btn btn-success mt-20">🍋 Gracias por tu Compra</a >
 					 </div>
+					 <img class="protege" src="images/programayprotege.png" height="70%" width="70%"
+									alt="Delivery">
                   </div>
                </div>
             </div>
